@@ -6,7 +6,7 @@
 #    By: sel-bouy <sel-bouy@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2024/04/23 10:50:28 by sel-bouy          #+#    #+#              #
-#    Updated: 2024/05/16 15:07:02 by sel-bouy         ###   ########.fr        #
+#    Updated: 2024/05/20 11:21:47 by sel-bouy         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -34,7 +34,7 @@ OBJ_BONUS = $(SRC_BONUS:.c=.o)
 all: printf_first $(NAME)
 
 %.o: %.c lib.h bonus/lib_bonus.h
-	$(CC) -c $< -o $@
+	$(CC) &(CFLAGS)-c $< -o $@
 
 printf_first:
 	@cd printf && make
